@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Michele Kamanga | Aspiring Software Engineer</title>
+  <meta name="description" content="Portfolio of Michele Kamanga, an IT student and aspiring software engineer who works in Python, Java, C++, C# and HTML/CSS.">
+  <meta name="theme-color" content="#3d3df5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Bricolage Grotesque (headings) and Figtree (body), both from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <body>
+   <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#home" aria-label="Michele Kamanga, back to top">
+        <span class="logo-mark" aria-hidden="true">MK</span>
+        <span class="logo-text">Michele Kamanga</span>
+      </a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="currentColor"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+        </button>
+        <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span id="greeting" class="greeting" aria-live="off">Hello</span>, I'm Michele Kamanga.
+          </h1>
+          <p class="hero-lead">
+            I'm an IT student who wants to be a software engineer. I like taking a problem apart, finding what's broken and fixing it.
+            Away from the screen you'll find me drawing, cooking, or behind a drum kit.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="#contact">Say hello</a>
+          </div>
+          <p class="hero-langs">I speak English and French, and I'm learning Spanish and Turkish.</p>
+        </div>
+
+        <div class="kit" aria-labelledby="kit-title">
+          <h2 id="kit-title" class="kit-title">Give the drums a go</h2>
+          <p class="kit-hint">Tap a pad, or press <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>F</kbd> on your keyboard.</p>
+          <div class="pads">
+            <button class="pad pad-kick" type="button" data-sound="kick" data-key="a" aria-label="Kick drum, key A"><span>Kick</span><kbd>A</kbd></button>
+            <button class="pad pad-snare" type="button" data-sound="snare" data-key="s" aria-label="Snare drum, key S"><span>Snare</span><kbd>S</kbd></button>
+            <button class="pad pad-hat" type="button" data-sound="hat" data-key="d" aria-label="Hi-hat, key D"><span>Hi-hat</span><kbd>D</kbd></button>
+            <button class="pad pad-tom" type="button" data-sound="tom" data-key="f" aria-label="Tom drum, key F"><span>Tom</span><kbd>F</kbd></button>
+          </div>
+          <button id="beat-toggle" class="btn btn-small" type="button" aria-pressed="false">Play a beat</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="about-title" class="section-title">A bit about me</h2>
+          <p>
+            I'm a second-year IT student at Gauteng City College, working towards a career in software engineering.
+            I'm comfortable in several programming languages and I pick up new tools quickly. What keeps me going is solving problems,
+            learning something new every week, and helping other people along the way.
+          </p>
+        </div>
+
+        <aside class="about-side" aria-label="Outside of code">
+          <h3>Outside of code</h3>
+          <ul class="hobby-list">
+            <li><span class="hobby-dot dot-blue" aria-hidden="true"></span><div><strong>Drums.</strong> Rhythm is maths you can dance to.</div></li>
+            <li><span class="hobby-dot dot-yellow" aria-hidden="true"></span><div><strong>Drawing.</strong> Where a lot of my interface ideas start.</div></li>
+            <li><span class="hobby-dot dot-pink" aria-hidden="true"></span><div><strong>UX/UI design.</strong> I like making things that are easy to use.</div></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-tinted" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 id="skills-title" class="section-title">What I work with</h2>
+
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Programming</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Design and security</h3>
+            <ul class="chips">
+              <li>UX/UI fundamentals</li>
+              <li>Data science foundations</li>
+              <li>Cybersecurity basics</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>How I work</h3>
+            <ul class="chips">
+              <li>Problem solving</li>
+              <li>Troubleshooting</li>
+              <li>Teamwork</li>
+              <li>Time management</li>
+              <li>Fast learner</li>
+              <li>Computer literacy</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Languages I speak</h3>
+            <ul class="lang-list">
+              <li><span>English</span><span class="level">Fluent</span></li>
+              <li><span>French</span><span class="level">Fluent</span></li>
+              <li><span>Spanish</span><span class="level">Beginner</span></li>
+              <li><span>Turkish</span><span class="level">Beginner</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title" class="section-title">Things I've built</h2>
+        <p class="section-intro">Pick a topic to filter. Each project links to its code on GitHub.</p>
+
+        <div class="filters" role="group" aria-label="Filter projects by topic">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter" type="button" data-filter="csharp" aria-pressed="false">C#</button>
+          <button class="filter" type="button" data-filter="java" aria-pressed="false">Java</button>
+          <button class="filter" type="button" data-filter="banking" aria-pressed="false">Banking</button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+
+          <article class="project" data-category="web">
+            <div class="project-tags"><span class="tag tag-web">Web</span></div>
+            <h3>To-do list</h3>
+            <p>A simple to-do list that lets you add tasks and delete the ones you added by mistake. Built with HTML, CSS and JavaScript.</p>
+            <a class="project-link" href="https://github.com/genmahub/todo-list" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+          <article class="project" data-category="csharp">
+            <div class="project-tags"><span class="tag tag-csharp">C#</span></div>
+            <h3>Temperature calculator</h3>
+            <p>A temperature calculation in C#, with small practice programs on variables, strings and maths operations.</p>
+            <a class="project-link" href="https://github.com/genmahub/temp-cal" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+          <article class="project" data-category="java">
+            <div class="project-tags"><span class="tag tag-java">Java</span></div>
+            <h3>GUI use</h3>
+            <p>My first example of a graphical user interface, written in Java.</p>
+            <a class="project-link" href="https://github.com/genmahub/GUI-use" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+          <article class="project" data-category="banking">
+            <div class="project-tags"><span class="tag tag-banking">Banking</span></div>
+            <h3>Banking system simulator</h3>
+            <p>A banking system simulator that works with banking details.</p>
+            <a class="project-link" href="https://github.com/genmahub/Banking-sysmen" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+          <article class="project" data-category="java banking">
+            <div class="project-tags"><span class="tag tag-java">Java</span><span class="tag tag-banking">Banking</span></div>
+            <h3>Banking systems</h3>
+            <p>A simple banking system in Java, with a SQL file for the database side.</p>
+            <a class="project-link" href="https://github.com/genmahub/banking_systems" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+
+        </div>
+        <p id="no-projects" class="empty" hidden>Nothing here yet. Choose another topic to see more projects.</p>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section section-tinted" aria-labelledby="journey-title">
+      <div class="wrap journey-grid">
+        <div>
+          <h2 id="journey-title" class="section-title">My journey so far</h2>
+          <ol class="timeline">
+            <li>
+              <h3>Information Technology: System Development</h3>
+              <p class="when">Gauteng City College, second year (now)</p>
+              <p>Studying web development and programming, and building projects like this portfolio.</p>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="certs" aria-labelledby="certs-title">
+          <h3 id="certs-title">Certificates</h3>
+          <ul>
+            <li>Introduction to Programming</li>
+            <li>Data Science</li>
+            <li>Data Science Foundations</li>
+            <li>Junior Cybersecurity Analyst</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-title" class="section-title">Let's talk</h2>
+          <p>
+            I'm looking for a junior developer role or an internship where I can learn from a team and contribute from day one.
+            Send me a message and I'll get back to you.
+          </p>
+          <ul class="contact-links">
+            <li><a href="mailto:kamangamichele@gmail.com">kamangamichele@gmail.com</a></li>
+            <li><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error" role="alert"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year">2026</span> Michele Kamanga. Built by hand with HTML, CSS and JavaScript.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
